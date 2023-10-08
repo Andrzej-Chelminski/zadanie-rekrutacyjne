@@ -1,0 +1,15 @@
+@mixin typo($color: black, $weight, $size, $height, $spacing, $transform: none, $style: normal) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+    text-transform: $transform;
+    font-style: $style;
+}
+
+@mixin center($align-items: center, $align-content: center, $justify-content: center) {
+    align-items: $align-items;
+    align-content: $align-content;
+    justify-content: $justify-content;
+}

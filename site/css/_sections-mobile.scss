@@ -1,0 +1,179 @@
+@use "./variables" as *;
+@use "./mixins.scss" as *;
+@use "./sections" as *;
+
+.section1__mobile--image {
+    display: none;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .header {
+        @include typo($dark-color, 900, 28px, 30px, 1.12px, uppercase);
+    }
+
+    .sub-header {
+        .sub-header--element {
+            @include typo($primary-color-1, 300, 15px, normal, 0.6px, uppercase);
+            background-size: 6px 6px 
+        }
+    }
+
+    .section1 {
+        @include center();
+        flex-direction: column;
+        padding: 40px 15px;
+        margin: 0 auto;
+        gap: 30px;
+
+        .content {
+            @include center();
+            max-width: 360px;
+        }
+
+        .section1__image {
+            flex: 100%;
+            width: 100%;
+            height: 200px;
+        }
+
+        .section1__image {
+            border-left: none;
+            max-width: 360px;
+            .section1__mobile--image {
+                display: block;
+                width: 100%;
+                border-top: 6px solid rgba($color: $primary-color-1, $alpha: 0.6);
+            }
+        }
+
+        .content__paragraph {
+            @include typo($dark-color, 400, 12px, normal, 0.48px);
+            padding-top: 30px;
+            padding-bottom: 12px;
+        }
+
+        .content__bullet-list {
+            margin-bottom: 20px;
+    
+            .content__list {
+                padding: 0;
+            }
+    
+            .content__list--element {
+                background-size: 7px 7px;
+                margin-bottom: 12px;
+                @include typo($dark-color, 400, 12px, normal, 0.48px);
+            }
+        }
+
+        .content__header2 {
+            @include typo($primary-color-1, 700, 18px, 16px, 0.36px, uppercase);
+            margin-bottom: 20px;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding-bottom: 30px;
+    
+            .boxes__paragraph {
+                @include typo($dark-color, 600, 10px, normal, 0.4px, uppercase);
+            }
+
+            .boxes__icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    .section2 {
+        .content {
+            padding: 40px 0;
+            max-width: 360px;
+            @include center();
+    
+            .content__header-wrapper {
+                padding-bottom: 30px;
+            }
+
+            .items {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-bottom: 30px;
+
+                .item__details {
+                    padding: 15px;
+                    background-color: $white;
+                    transform: translate(-50%, -100%);
+                    -ms-transform: translate(-50%, -100%);
+                    @include typo($dark-color, 600, 14px, normal, 0.63px, uppercase);
+                }
+            }
+        }
+    }
+
+    .section3 {
+        transform: translateY(-60px);
+        .section3__header-wrapper {
+            padding-top: 26px;
+            padding-bottom: 30px;
+            max-width: 360px;
+            position: relative;
+            margin: 0 auto;
+        }
+    
+        .container {
+            padding-top: 20px;
+            padding-bottom: 40px;
+
+            .info {
+                max-width: 360px;
+                margin-bottom: 30px;
+            }
+        
+            .info__stats {
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .info__stat {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 30px;
+        
+                .info__main {
+                    @include typo($white, 900, 28px, 30px, 1.12px, uppercase);
+                }
+        
+                .info__description {
+                    @include typo($white, 600, 16px, normal, 0.32px, uppercase);
+                }
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                max-width: 360px;
+                gap: 15px;
+                padding: 0 15px;
+            }
+        
+            .cards__card {
+                padding: 20px;
+        
+                .cards__main {
+                    @include typo($dark-color, 600, 14px, normal, 0.63px, uppercase);
+                }
+        
+                .cards__description {
+                    padding-top: 25px;
+                    @include typo($dark-color, 400, 12px, normal, 0.48px);
+                }
+            }
+        }
+    }
+}

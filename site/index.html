@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zadanie rekrutacyjne - Andrzej Chełmiński</title>
+        <link rel="stylesheet" href="./css/main.scss">
+        
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <a href=""><img src="./assets/logo.svg" alt="logo"></a>
+            </div>
+            <div class="navigation" id="navigation">
+                <a href="#section1" class="navigation__btn active">SEKCJA 1</a>
+                <a href="#section2" class="navigation__btn">SEKCJA 2</a>
+                <a href="#section3" class="navigation__btn">SEKCJA 3</a>
+                <div class="navigation__dropdown--button" onclick="menu()">
+                    <img src="./assets/icons/dropdown_open.svg" id="navigation__dropdown-icon--open" style="display: block;">
+                    <img src="./assets/icons/dropdown_close.svg" id="navigation__dropdown-icon--close" style="display: none;">
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navigation" id="mobile-navigation">
+            <div class="mobile-navigation__links">
+                <a href="#section1" class="mobile-navigation__btn" onclick="menu()">SEKCJA 1</a>
+                <a href="#section2" class="mobile-navigation__btn" onclick="menu()">SEKCJA 2</a>
+                <a href="#section3" class="mobile-navigation__btn" onclick="menu()">SEKCJA 3</a>
+            </div>
+        </div>
+        <button class="fixed-button">lorem ipsum dolor sit amet</button>
+
+        <div id="section1" class="section1">
+            <div class="content">
+                <div class="content__header-wrapper">
+                    <h1 class="header content__header">SEKCJA 1 - LOREM IPSUM</h1>
+                    <ul class="sub-header content__sub-header"><li class="sub-header--element content__sub-header--element">lorem ipsum dolor sit amet</li></ul>
+                </div>
+                <p class="content__paragraph">Lorem ipsum dolor sit amet consectetur. Aenean sed cursus lacus at sit tempus. Dolor tortor sit pellentesque tellus elit vestibulum quisque sit hendrerit. Ullamcorper aliquam dignissim at eget laoreet.</p>
+                <div class="content__bullet-list">
+                    <ul class="content__list">
+                        <li class="content__list--element">Lorem ipsum dolor sit amet consectetur. Aenean sed cursus lacus at sit tempus. </li>
+                        <li class="content__list--element">Lorem ipsum dolor sit amet consectetur. Aenean sed cursus lacus at sit tempus. Dolor tortor sit pellentesque tellus elit vestibulum quisque sit hendrerit.</li>
+                        <li class="content__list--element">Lorem ipsum dolor sit amet consectetur. Aenean sed cursus lacus at sit tempus. Dolor tortor sit pellentesque tellus elit vestibulum quisque sit hendrerit. Ullamcorper aliquam dignissim at eget laoreet.</li>
+                        <li class="content__list--element">Lorem ipsum dolor sit amet consectetur. Aenean sed cursus lacus at sit tempus. Dolor tortor sit pellentesque tellus elit vestibulum quisque sit hendrerit.</li>
+                        <li class="content__list--element">Lorem ipsum dolor sit amet consectetur. </li>
+                        <li class="content__list--element">Lorem ipsum dolor sit amet consectetur. Aenean sed cursus lacus at sit tempus. </li>
+                        <li class="content__list--element">Lorem ipsum dolor sit amet consectetur. Aenean sed cursus lacus at sit tempus. Dolor tortor sit pellentesque tellus elit vestibulum quisque sit hendrerit. Ullamcorper aliquam dignissim.</li>
+                    </ul>
+                </div>
+                <h2 class="content__header2">Lorem ipsum dolor sit amet:</h2>
+                <div class="boxes">
+                    <div class="boxes__box1">
+                        <img src="./assets/icons/helmet (1) 1.svg" alt="hełm" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="boxes__box2">
+                        <img src="./assets/icons/cpr 1.svg" alt="cpr" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="boxes__box3">
+                        <img src="./assets/icons/file 1.svg" alt="plik" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="boxes__box4">
+                        <img src="./assets/icons/documents 1.svg" alt="dokumenty" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="boxes__box5">
+                        <img src="./assets/icons/forklift 1.svg" alt="wózek widłowy" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="boxes__box6">
+                        <img src="./assets/icons/presentation 1.svg" alt="prezentacja" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="boxes__box7">
+                        <img src="./assets/icons/production (1) 1.svg" alt="produkcja" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="boxes__box8">
+                        <img src="./assets/icons/screwdriver 1.svg" alt="śrubokręty" class="boxes__icon">
+                        <p class="boxes__paragraph">lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section1__image"><img src="./assets/worker.jpg" alt="pracownik" class="section1__mobile--image"></div>
+        </div>
+
+        <div id="section2" class="section2">
+            <div class="content">
+                <div class="content__header-wrapper">
+                    <h1 class="header content__header">SEKCJA 2 - lorem ipsum dolor sit amet</h1>
+                    <ul class="sub-header content__sub-header"><li class="sub-header--element content__sub-header--element">lorem ipsum dolor sit amet</li></ul>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <img src="./assets/items/02.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/items/03.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/items/04.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/items/05.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/items/06.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/items/07.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/items/08.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/items/09.png" class="item__image">
+                        <div class="item__overlay"></div>
+                        <div class="item__middle">
+                            <img src="./assets/icons/info.svg" alt="info">
+                            <p class="item__middle--paragraph">Szczegóły</p>
+                        </div>
+                        <div class="item__details">
+                            <p class="item__details--paragraph">Nazwa lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="button-container--button">lorem ipsum dolor sit amet</button>
+                    <img src="./assets/Vector 1.svg" class="button-container--arrow">
+                </div>
+            </div>
+        </div>
+
+        <div id="section3" class="section3">
+            <div class="section3__header-wrapper">
+                <h1 class="header content__header">sekcja 3 - lorem ipsum dolor sit amet</h1>
+                <ul class="sub-header content__sub-header"><li class="sub-header--element content__sub-header--element">lorem ipsum dolor sit amet</li></ul>
+            </div>
+            <div class="container">
+                <div class="info">
+                    <div class="info__stats">
+                        <div class="info__stat">
+                            <p class="info__main">30 lat</p>
+                            <p class="info__description">lorem ipsum</p>
+                        </div>
+                        <div class="info__stat">
+                            <p class="info__main">15 lat</p>
+                            <p class="info__description">lorem ipsum</p>
+                        </div>
+                        <div class="info__stat">
+                            <p class="info__main">+176</p>
+                            <p class="info__description">lorem ipsum</p>
+                        </div>
+                        <div class="info__stat">
+                            <p class="info__main">+5000</p>
+                            <p class="info__description">lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards__card">
+                        <p class="cards__main">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="cards__description">Lorem ipsum dolor sit amet consectetur. Elementum risus turpis nisi mi viverra egestas aliquet volutpat.</p>
+                    </div>
+                    <div class="cards__card">
+                        <p class="cards__main">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="cards__description">Lorem ipsum dolor sit amet consectetur. Elementum risus turpis nisi mi viverra egestas aliquet volutpat.</p>
+                    </div>
+                    <div class="cards__card">
+                        <p class="cards__main">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="cards__description">Lorem ipsum dolor sit amet consectetur. Elementum risus turpis nisi mi viverra egestas aliquet volutpat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="left-column">
+                <img src="./assets/Logo_black.svg" alt="logo" class="footer__logo">
+                <div class="company">
+                    <div class="company__social">
+                        <a href="https://www.facebook.com/"><img src="./assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="https://pl.linkedin.com/"><img src="./assets/icons/linkedin.svg" alt="Linkedin"></a>
+                    </div>
+                    <div class="company__vertical-line"></div>
+                    <div class="company__details">
+                        <p class="company__name">Nazwa firmy</p>
+                        <p class="company__description">ul. Przykładowa, 12-345 Miasto</p>
+                        <p class="company__description">NIP: PL0000000000</p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="button-container--button">lorem ipsum dolor sit amet</button>
+                    <img src="./assets/Vector 1.svg" class="button-container--arrow">
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="header">
+                    <div class="header__horizontal-line"></div>
+                    <p class="header__name">Nazwa marki</p>
+                    <div class="header__horizontal-line"></div>
+                </div>
+                <div class="more">
+                    <div class="more__left">
+                        <p class="more__info">Strona główna</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                    </div>
+                    <div class="more__right">
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                    </div>
+                </div>
+                <div class="header header--bottom">
+                    <div class="header__horizontal-line"></div>
+                    <p class="header__name">lorem ipsum dolor sit amet</p>
+                    <div class="header__horizontal-line"></div>
+                </div>
+                <div class="more more--bottom">
+                    <div class="more__left">
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                    </div>
+                    <div class="more__right">
+                        <p class="more__info">lorem ipsum dolor</p>
+                        <p class="more__info">lorem ipsum dolor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./JS/scripts.js"></script>
+    </body>
+</html>
